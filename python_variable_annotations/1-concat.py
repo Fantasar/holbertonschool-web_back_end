@@ -12,5 +12,4 @@ def concat(str1: str, str2: str) -> str:
     Renvoie une string concateniser.
     """
 
-    combined_string = str1 + " " + str2
-    print(combined_string)
+    return str1 + str2
