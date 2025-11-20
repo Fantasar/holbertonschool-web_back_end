@@ -1,0 +1,1 @@
+Voici mon readme pour le projet sur les annotations de variables
