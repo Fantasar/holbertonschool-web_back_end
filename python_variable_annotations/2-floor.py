@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
+
+"""
+Module qui permet de réaliser un arrondie.
+"""
+
+
 import math
+
 
 def floor(n: float) -> int:
 
