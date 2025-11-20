@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+
+"""
+Module qui permet de réaliser une addition.
+"""
+
+
 def add(a: float, b: float) -> float:
 
     """
