@@ -7,7 +7,7 @@ Module qui contient une fonction de
 types-annotée et renvoie un tuple.
 """
 
-def to_kv(k: str, v: Union[int,float]) -> Tuple[str, float]:
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
 
     """
     Fonction qui prends en paramètres k et v
