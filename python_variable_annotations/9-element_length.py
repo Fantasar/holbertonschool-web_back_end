@@ -5,6 +5,9 @@ Voici un module pour retourner une
 lists de tuples
 """
 
+from typing import Iterable, Sequence, List, Tuple
+
+
 def element_lenght(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
 
     """
