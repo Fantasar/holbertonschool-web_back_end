@@ -7,6 +7,7 @@ Module qui permet de faire une addition
 avec des nombres entiers et flottant.
 """
 
+
 def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
 
     """

@@ -6,6 +6,7 @@ Module qui permet de réaliser une multiplication
 avec un nombre flottant.
 """
 
+
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
 
     """
