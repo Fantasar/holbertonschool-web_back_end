@@ -1,16 +1,8 @@
 #!/usr/bin/env python3
-
-"""
-Module qui permet de réaliser une addition
-en prenant une liste de nombres et retourn
-un flottant.
-"""
+"""This module is for a project."""
 from typing import List
 
 
-def sum_list(input_list: list) -> float:
-
-    """
-    Fonction pour réaliser l'opérations
-    """
+def sum_list(input_list: List[float]) -> float:
+    """Return the sum of a list of floats."""
     return float(sum(input_list))
