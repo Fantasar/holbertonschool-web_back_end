@@ -5,9 +5,9 @@ Module qui permet de génerer un nombres aléaatoires
 
 import asyncio
 import random
+from typing import Generator
 
-
-async def async_generator():
+async def async_generator() -> Generator[float, None, None]:
 
     """
     Module qui permet de créer une coroutine
