@@ -8,6 +8,7 @@ Les information sont stocker dans une databass.css sur
 des serveur de amazon.aws.
 """
 
+
 def index_range(page: int, page_size: int) -> tuple:
 
     """
