@@ -84,7 +84,7 @@ class Server:
             total_pages = math.ceil(total_items / page_size)
 
             hypermedia = {
-                "page_size": len(data),
+                "page_size": len(data) if data else 0,
                 "page": page,
                 "data": data,
                 "next_page": page + 1 if page < total_pages else None,
