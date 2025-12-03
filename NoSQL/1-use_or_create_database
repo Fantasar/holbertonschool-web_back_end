@@ -1,2 +1,2 @@
 // Script SQL qui permet de créer une databass
-use myshinynewdb
+use my_db
