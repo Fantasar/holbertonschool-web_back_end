@@ -1,2 +1,2 @@
 // Script en NoSqul qui permet de lister tout les documents de la db
-{listCollections: 1, filter: <document>, nameOnly: <boolean>, authorizedCollections: <boolean>, comment: <any>}</any></boolean></boolean></document>
+db.runCommand({listCollections: 1, authorizedCollections: true, nameOnly: true})
