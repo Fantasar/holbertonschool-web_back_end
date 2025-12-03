@@ -1,1 +1,2 @@
-db.adminCommand ( { listDatabases: 1 } )
+// Script Nosql pour afficher la databass
+show databases
