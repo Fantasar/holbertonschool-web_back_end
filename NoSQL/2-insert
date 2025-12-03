@@ -1,2 +1,2 @@
 // Script NoSql pour ajouter un document dans une databass
-db.user.insert({name: "Holberton school"})
+db.collection.insert({name: "Holberton school"})
