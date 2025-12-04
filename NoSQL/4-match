@@ -1,2 +1,2 @@
 // Script en NoSqul qui permet de lister tout les documents pour un noms
-db.school.find().sort({name="Holberton school": sort_order})
+db.school.find({name: "Holberton school"})
