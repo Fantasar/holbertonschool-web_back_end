@@ -1,0 +1,2 @@
+// Script Nosql qui permet de suprimmer des documents
+db.School.deleteMany({ name:"Holberton school" });
