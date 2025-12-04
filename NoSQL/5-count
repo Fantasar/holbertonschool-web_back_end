@@ -1,0 +1,3 @@
+// Script NoSql qui permet de compter le nombres de documents présent dans
+// la base de donée school.
+db.school.count();
