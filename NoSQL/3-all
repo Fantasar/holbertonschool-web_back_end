@@ -1,2 +1,2 @@
 // Script en NoSqul qui permet de lister tout les documents de la db
-showns collections:
+db.school.find()
