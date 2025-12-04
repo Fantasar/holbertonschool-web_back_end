@@ -1,5 +1,5 @@
 // Script Nosql qui permet d'ajouter un nouvelle attribut a la base de donné
 db.school.updateMany(
-    { name: "Holberton school" },
-    { $set: { address: "972 Mission street" } }
+    {name: "Holberton school"},
+    {$set:{address: "972 Mission street"}}
 );
