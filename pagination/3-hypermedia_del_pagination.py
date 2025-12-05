@@ -46,21 +46,24 @@ class Server:
         avec un index de 1 --> 10
         """
 
-        assert (
-            index is not None and 0 <= index < len(self.indexed_dataset())
-        )
+        indexed_data = self.indexed_dataset()
+        max_index = max(indexed_data.keys())
 
-        indexed_data = self.indexed_data()
+        assert (
+            index is not None and 0 <= index <= max_index
+        )
 
         data = []
         current_index = index
 
-        while len(data) < page_size and current_index < len(indexed_data):
+        while len(data) < page_size and current_index < max_index:
             if current_index in indexed_data:
                 data.append(indexed_data[current_index])
             current_index += 1
 
         next_index = current_index
+        while next_index <= max_index and next_index not in indexed_data:
+            next_index += 1
 
         return {
             "index": index,
