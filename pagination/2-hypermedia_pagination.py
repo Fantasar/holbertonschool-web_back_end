@@ -72,24 +72,19 @@ class Server:
 
         return self.__dataset[start:end]
 
-        def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
+        """Return a dictionary containing pagination information."""
+        data = self.get_page(page, page_size)
+        total_items = len(self.dataset())
+        total_pages = math.ceil(total_items / page_size)
 
-            """
-            Foncion qui permer de récuper et retourner un dictionnaire
-            contenant les informations de la databass en format Json
-            """
-
-            data = self.get_page(page, page_size)
-            total_items = len(self.dataset())
-            total_pages = math.ceil(total_items / page_size)
-
-            hypermedia = {
-                "page_size": len(data) if data else 0,
-                "page": page,
-                "data": data,
-                "next_page": page + 1 if page < total_pages else None,
-                "prev_page": page - 1 if page > 1 else None,
-                "total_pages": total_pages
-            }
+        hypermedia = {
+            'page_size': len(data),
+            'page': page,
+            'data': data,
+            'next_page': page + 1 if page < total_pages else None,
+            'prev_page': page - 1 if page > 1 else None,
+            'total_pages': total_pages
+        }
 
         return hypermedia
