@@ -1,0 +1,7 @@
+const getStudentIdsSum = (students) => {
+    return students.reduce((sum, student) => {
+        return sum + student.id;
+    }, 0);
+};
+
+export default getStudentIdsSum;
