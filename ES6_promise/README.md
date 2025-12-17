@@ -1,0 +1,1 @@
+Bonjour voici mon readme pour le dossier sur la méthode des promesses
