@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 
-function countStudents(path) {
+function countStudents (path) {
   return new Promise((resolve, reject) => {
     fs.readFile(path, 'utf-8', (err, data) => {
       if (err) {
@@ -66,3 +66,5 @@ const app = http.createServer(async (req, res) => {
 });
 
 app.listen(1245);
+
+module.exports = app;
